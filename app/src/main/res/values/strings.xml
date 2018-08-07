@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">AndroidAcademyOnKotlin</string>
+    <string name="on_first_button">Plus One</string>
+</resources>
