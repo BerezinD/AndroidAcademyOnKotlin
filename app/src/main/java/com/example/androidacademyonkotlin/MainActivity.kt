@@ -13,22 +13,24 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val textOnButton: TextView = findViewById(R.id.bigText)
-        var counter: Int = 0
-        var infoOfUser = ""
 
-        fun openActivity(){
-            val secondActivityIntent: Intent = Intent(this, SecondActivity::class.java)
-            startActivity(secondActivityIntent)
-            secondActivityIntent.putExtra("what is that?", counter)
-        }
+        var counter: Int = 0
+        val textOnButton: TextView = findViewById(R.id.bigText)
+        val bigButton: Button = findViewById(R.id.bigButton)
+        val createActivityButton = findViewById<Button>(R.id.openActivity)
+        val sendEmailButton = findViewById<Button>(R.id.sendE_mail)
+        val messageEditor = findViewById<TextView>(R.id.messageEditor)
 
         textOnButton.setText(R.string.on_first_button)
-        val bigButton: Button = findViewById(R.id.bigButton)
+
+        createActivityButton.setOnClickListener {
+            SecondActivity.openSecondActivity(this, counter, messageEditor.text.toString())
+        }
+
         bigButton.setOnClickListener{
                 counter++
                 textOnButton.setText("$counter")
-            if (counter==5) openActivity()
+            if (counter==5) SecondActivity.openSecondActivity(this, counter)
         }
     }
 }

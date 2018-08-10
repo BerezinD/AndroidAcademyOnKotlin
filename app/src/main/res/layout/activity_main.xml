@@ -16,7 +16,7 @@
             android:textSize="@dimen/my_text_size"
             android:textColorHighlight="@color/colorPrimary"
             android:textAlignment="center"
-            android:text="Hello World!"
+            android:text="Hello!"
     />
     
     <Button
@@ -26,6 +26,29 @@
             android:layout_weight = "1"
             android:text="@string/on_first_button"
             android:textSize="@dimen/my_text_size"
+    />
+
+    <EditText
+            android:id="@+id/messageEditor"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:hint="type your message here..."
+            android:gravity="bottom"
+    />
+
+    <Button
+            android:id="@+id/openActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Open New Activity"
+    />
+
+    <Button
+            android:id="@+id/sendE-mail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="send an e-mail"
     />
 
 </LinearLayout>

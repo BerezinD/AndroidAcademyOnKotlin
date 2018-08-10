@@ -6,26 +6,50 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".MainActivity"
-        android:orientation="horizontal">
+        android:orientation="vertical">
 
     <TextView
             android:id="@+id/bigText"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
             android:layout_weight = "1"
-            android:textSize="@dimen/my_text_size"
             android:textColorHighlight="@color/colorPrimary"
             android:textAlignment="center"
+            android:textSize="40dp"
             android:text="Hello World!"
     />
     
     <Button
             android:id="@+id/bigButton"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
             android:layout_weight = "1"
             android:text="@string/on_first_button"
-            android:textSize="@dimen/my_text_size"
+            android:textSize="20dp"
+    />
+
+    <EditText
+            android:id="@+id/messageEditor"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:hint="type your message here..."
+            android:gravity="bottom"
+    />
+
+    <Button
+            android:id="@+id/openActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textDirection="inherit"
+            android:text="Open New Activity"
+    />
+
+    <Button
+            android:id="@+id/sendE-mail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="send an e-mail"
     />
 
 </LinearLayout>
