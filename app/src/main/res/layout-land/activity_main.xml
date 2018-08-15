@@ -6,6 +6,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".MainActivity"
+        android:contentDescription="@string/main_name"
         android:orientation="vertical">
 
     <TextView
@@ -15,8 +16,8 @@
             android:layout_weight = "1"
             android:textColorHighlight="@color/colorPrimary"
             android:textAlignment="center"
-            android:textSize="40dp"
-            android:text="Hello World!"
+            android:textSize="@dimen/average_text_size"
+            android:text="@string/app_name"
     />
     
     <Button
@@ -25,15 +26,16 @@
             android:layout_height="0dp"
             android:layout_weight = "1"
             android:text="@string/on_first_button"
-            android:textSize="20dp"
+            android:textSize="@dimen/small_text_size"
     />
 
     <EditText
+            android:inputType="text"
             android:id="@+id/messageEditor"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:hint="type your message here..."
+            android:hint="@string/hint"
             android:gravity="bottom"
     />
 
@@ -42,14 +44,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textDirection="inherit"
-            android:text="Open New Activity"
+            android:text="@string/open_activity"
     />
 
     <Button
             android:id="@+id/sendE-mail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="send an e-mail"
+            android:text="@string/send"
     />
 
 </LinearLayout>

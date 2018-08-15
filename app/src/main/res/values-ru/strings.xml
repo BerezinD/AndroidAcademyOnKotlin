@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Упражнение #1</string>
+    <string name="on_first_button">За Одина!!</string>
+    <string name="main_name">Академия</string>
+    <string name="hint">Сюда своё сообщение давай\.\.\.</string>
+    <string name="open_activity">Открыть новое окно</string>
+    <string name="send">Пришли мне мыло ;)</string>
+    <string name="academy_on_kotlin">Академия Андроида на Котлине</string>
+    <string name="email_to">тыДля@меня.вот</string>
+    <string name="current_counter_is">Значение Одина:</string>
+</resources>

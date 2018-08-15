@@ -1,4 +1,11 @@
 <resources>
-    <string name="app_name">AndroidAcademyOnKotlin</string>
+    <string name="app_name">Exercise #1</string>
     <string name="on_first_button">Plus One</string>
+    <string name="main_name">Academy</string>
+    <string name="hint">Type your message here\.\.\.</string>
+    <string name="open_activity">Open New Activity</string>
+    <string name="send">send an e-mail</string>
+    <string name="academy_on_kotlin">Android Academy on Kotlin</string>
+    <string name="email_to">meTo@you.com</string>
+    <string name="current_counter_is">Current counter is: </string>
 </resources>
