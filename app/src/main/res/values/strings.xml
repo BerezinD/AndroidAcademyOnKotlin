@@ -8,4 +8,6 @@
     <string name="academy_on_kotlin">Android Academy on Kotlin</string>
     <string name="email_to">meTo@you.com</string>
     <string name="current_counter_is">Current counter is: </string>
+    <string name="settings">Settings</string>
+    <string name="dollars">dollars</string>
 </resources>
